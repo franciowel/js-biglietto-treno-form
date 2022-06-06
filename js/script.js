@@ -22,6 +22,15 @@ generateButton.addEventListener('click',
         // converto il risultato in un numero leggibile
         let TrainTicket = finalPrice.toFixed(2);
 
+        // VARIABILE OFFERTA GUEST
+        let yourOffer = 'Biglietto Standard';
+
+        if(userAge === 'minorenne') {
+            yourOffer = 'Biglietto Junior'
+        } else if (userAge === 'over') {
+            yourOffer = 'Biglietto Senior'
+        }
+
         // formula per generare codice carrozza
         const numberWagon = Math.floor(Math.random() * 10);
         console.log(numberWagon);
@@ -34,7 +43,7 @@ generateButton.addEventListener('click',
         // STAMPO IN PAGINA
         document.getElementById('customer-name').innerHTML = userName;
         document.getElementById('your-ticket').innerHTML = TrainTicket;
-
+        document.getElementById('your-offer').innerHTML = yourOffer;
         document.getElementById('your-wagon').innerHTML = numberWagon;
         document.getElementById('your-code-cp').innerHTML = CPCodeNum;
         document.getElementById('ticket').classList.add('active');
