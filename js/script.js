@@ -25,7 +25,21 @@ generateButton.addEventListener('click',
         // STAMPO IN PAGINA
         document.getElementById('customer-name').innerHTML = userName;
         document.getElementById('your-ticket').innerHTML = TrainTicket;
+        document.getElementById('ticket').classList.add('active');
     }
 
 
 );
+
+// cancellare le vecchie instanceof, non si sa mai devo calcorare più ticket
+const cancelTicket = document.getElementById('annulla-ticket');
+cancelTicket.addEventListener('click',
+    function() {
+        document.getElementById('username').value = '';
+        document.getElementById('usertrip').value = '';
+        document.getElementById('userage').value = 'maggiorenne';
+        
+        // funzione che ci toglie dalla view il ticket
+        document.getElementById('ticket').classList.remove('active');
+    }
+)
