@@ -1,3 +1,12 @@
+/* COMMONS */
+ul{
+    list-style: none;
+}
+
+.flexcontainer{
+    display: flex;
+}
+
 /* SEZIONE TICKET */
 .ticket{
     display: none;
@@ -5,4 +14,8 @@
 
 .ticket.active{
     display: block;
+}
+
+ul li{
+    padding: 0 2rem;
 }
