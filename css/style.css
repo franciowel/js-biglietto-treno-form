@@ -12,6 +12,7 @@ body{
 /* COMMONS */
 ul{
     list-style: none;
+    justify-content: space-around;
 }
 
 .flexcontainer{
@@ -96,8 +97,4 @@ ul{
 
 .ticket h3{
     padding-bottom: 0.6rem;
-}
-
-ul li{
-    padding: 0 2rem;
 }
