@@ -14,10 +14,14 @@
     <!-- SEZIONE FORM DA COMPILARE -->
     <section class="quest">
 
-        <div class="ms_user_form">
+        <div class="section-contain">
+
+            <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        <div class="ms_user_form flexcontainer">
 
             <div class="ms_form_item">
 
+                <!-- QUI CHIEDO NOME E COGNOME -->
                 <label for="username">
                     Nome Cognome
                 </label>
@@ -26,6 +30,7 @@
 
             </div>
 
+            <!-- QUI CHIEDO LA DISTANZA DA PERCORRERE IN KM -->
             <div class="ms_form_item">
 
                 <label for="usertrip">
@@ -35,7 +40,8 @@
                 <input type="number" id="usertrip" placeholder="Inserire distanza (Km)">
 
             </div>
-
+            
+            <!-- FASCIA D'ETA SELEZIONABILE IN TRE PARTI CON SCONTO ANNESSO -->
             <div class="ms_form_item">
 
                 <label for="userage">
@@ -54,82 +60,95 @@
 
             </div>
 
-            <div class="ms_form_item">
+        </div>
 
-                <button id="formula-ticket">
-                    Genera
-                </button>
+        <div class="form-button flexcontainer">
 
-                <button id="annulla-ticket">
-                    Annulla
-                </button>
+            <!-- TASTO GENERA stampa in pagina il preventivo ticket-->
+            <button id="formula-ticket">
+               Genera
+            </button>
 
-            </div>
+            <!-- TASTO ANNULLA cancella tutte le info scritte -->
+            <button id="annulla-ticket">
+                Annulla
+            </button>
+
+            
+        </div>
 
         </div>
 
     </section>
 
+    <!-- QUI VERRA STAMPATO IL BIGLIETTO -->
     <section id="ticket" class="ticket">
 
-        <div class="ticket-info flexcontainer">
+        <div class="section-contain">
 
-            <div class="name-box">
+            <h2>
+                IL TUO BIGLIETTO
+            </h2>
+            
+            <div class="ticket-info flexcontainer">
 
-                <h3>
-                    NOME PASSEGGERO:
-                </h3>
-
-                <div class="guest-name" id="customer-name"></div>
-
+                <div class="name-box">
+    
+                    <h3>
+                        NOME PASSEGGERO:
+                    </h3>
+    
+                    <div class="guest-name" id="customer-name"></div>
+    
+                </div>
+    
+                <div class="ticket-boxinfo">
+                    <!-- QUI CI SARANNO LE INFO DEL TICKET -->
+                    <ul class="flexcontainer">
+                        
+                        <li>
+                            <h3>
+                                OFFERTA: 
+                            </h3>
+    
+                            <div id="your-offer"></div>
+    
+                        </li>
+    
+                        <li>
+                            <h3>
+                                NUM. CARROZZA: 
+                            </h3>
+    
+                            <div id="your-wagon"></div>
+    
+                        </li>
+    
+                        <li>
+                            <h3>
+                                CODICE CP: 
+                            </h3>
+    
+                            <div id="your-code-cp"></div>
+    
+                        </li>
+    
+                        <li>
+                            <h3>
+                                COSTO BIGLIETTO: 
+                            </h3>
+    
+                            <div id="your-ticket"></div>
+    
+                        </li>
+    
+                    </ul>
+    
+    
+    
+                </div>
+    
             </div>
-
-            <div class="ticket-boxinfo">
-                <!-- QUI CI SARANNO LE INFO DEL TICKET -->
-                <ul class="flexcontainer">
-
-                    <li>
-                        <h3>
-                            OFFERTA: 
-                        </h3>
-
-                        <div id="your-offer"></div>
-
-                    </li>
-
-                    <li>
-                        <h3>
-                            NUM. CARROZZA: 
-                        </h3>
-
-                        <div id="your-wagon"></div>
-
-                    </li>
-
-                    <li>
-                        <h3>
-                            CODICE CP: 
-                        </h3>
-
-                        <div id="your-code-cp"></div>
-
-                    </li>
-
-                    <li>
-                        <h3>
-                            COSTO BIGLIETTO: 
-                        </h3>
-
-                        <div id="your-ticket"></div>
-
-                    </li>
-
-                </ul>
-
-
-
-            </div>
-
 
         </div>
         

@@ -1,3 +1,14 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* COMMONS */
 ul{
     list-style: none;
@@ -7,13 +18,84 @@ ul{
     display: flex;
 }
 
+/* SEZIONE FORM */
+.quest{
+    background-color: lightblue;
+
+}
+
+.section-contain{
+    padding: 3rem 2rem;
+}
+
+.quest h2{
+    color: white;
+    text-align: center;
+    padding:2rem 0;
+}
+
+.ms_user_form{
+    justify-content: space-around;
+}
+
+.ms_form_item{
+    display: flex;
+    flex-direction: column;
+}
+
+.ms_form_item label{
+    color: white;
+    padding-bottom: 0.5rem;
+}
+
+.form-button{
+    padding: 1rem 0;
+    justify-content: center;
+}
+
+.form-button button{
+    margin: 0.3rem;
+    padding:0.5rem 1rem;
+    color: lightblue;
+    background-color: white;
+    border-radius: 25px;
+    font-size: 1rem;
+    border: none;
+}
+
 /* SEZIONE TICKET */
 .ticket{
     display: none;
+    background-color: lightblue;
+    color: white;
+}
+
+.ticket h2{
+    text-align: center;
+    padding: 2rem 0;
 }
 
 .ticket.active{
     display: block;
+}
+
+/* NAME BOX E INFO */
+.name-box{
+    background-color: white;
+    color: lightblue;
+    height: 100px;
+    padding: 1rem 0.5rem;
+    width: 30%;
+}
+
+.ticket-boxinfo{
+    border: 2px solid white;
+    padding: 1rem 0.5rem;
+    width: 70%;
+}
+
+.ticket h3{
+    padding-bottom: 0.6rem;
 }
 
 ul li{
